@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <height>25</height>
+    <page>News_Ticker</page>
+    <pageComponentType>visualforcePage</pageComponentType>
+    <showLabel>false</showLabel>
+    <showScrollbars>false</showScrollbars>
+    <width>wide</width>
+</HomePageComponent>

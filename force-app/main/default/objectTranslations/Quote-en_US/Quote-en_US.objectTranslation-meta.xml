@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Automations --></label>
+            <section>Automations</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Edit Quote --></label>
+        <name>EditQuote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Edit Products --></label>
+        <name>Edit_Line_Items</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Generate PDF --></label>
+        <name>Generate_PDF</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+</CustomObjectTranslation>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_for_Record_owner</name>
+        <label>Check for Record owner</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Si_Int_pricebook</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>If_user_is_Akhil</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>005OH0000035xTxYAI</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_SI_India_Pricebook</targetReference>
+            </connector>
+            <label>If user is Akhil?</label>
+        </rules>
+        <rules>
+            <name>If_User_is_Chris</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>005OH000002oa3yYAA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_SI_NA_Pricebook</targetReference>
+            </connector>
+            <label>If User is Chris?</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Add Pricebook in Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Add Pricebook in Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Assign_SI_India_Pricebook</name>
+        <label>Assign SI India Pricebook</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Price_Book__c</field>
+            <value>
+                <stringValue>01s1C000002AuIMQA0</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Assign_Si_Int_pricebook</name>
+        <label>Assign Si Int pricebook</label>
+        <locationX>578</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Price_Book__c</field>
+            <value>
+                <stringValue>01s1C000002AuGBQA0</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Assign_SI_NA_Pricebook</name>
+        <label>Assign SI NA Pricebook</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Price_Book__c</field>
+            <value>
+                <stringValue>01s1C000002AuKDQA0</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_for_Record_owner</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

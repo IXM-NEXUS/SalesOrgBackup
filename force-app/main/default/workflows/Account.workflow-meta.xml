@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Account_Submitted_For_Approval</fullName>
+        <ccEmails>order@invixium.com</ccEmails>
+        <description>Account Submitted For Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>skapadia@invixium.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Emails/Account_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Approved_Notification</fullName>
+        <ccEmails>order@invixium.com</ccEmails>
+        <description>Approved Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>skapadia@invixium.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Emails/Account_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Recall_Notification</fullName>
+        <ccEmails>order@invixium.com</ccEmails>
+        <description>Recall Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>skapadia@invixium.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Emails/Account_is_Recalled</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Notification</fullName>
+        <ccEmails>order@invixium.com</ccEmails>
+        <description>Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>skapadia@invixium.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Approval_Process_Emails/Account_Approval_Rejected</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Lock_Related_Records</fullName>
+        <field>Lock_Related_Records__c</field>
+        <literalValue>1</literalValue>
+        <name>Lock Related Records</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Unlock_Related_Records</fullName>
+        <field>Lock_Related_Records__c</field>
+        <literalValue>0</literalValue>
+        <name>Unlock Related Records</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Unlock_Related_Records1</fullName>
+        <field>Lock_Related_Records__c</field>
+        <literalValue>0</literalValue>
+        <name>Unlock Related Records</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Unlock_Related_Records2</fullName>
+        <field>Lock_Related_Records__c</field>
+        <literalValue>0</literalValue>
+        <name>Unlock Related Records</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Incoterms</fullName>
+        <field>Incoterms__c</field>
+        <literalValue>EXW, Toronto</literalValue>
+        <name>Update Incoterms</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Incoterms1</fullName>
+        <field>Incoterms__c</field>
+        <literalValue>EXW, Toronto</literalValue>
+        <name>Update Incoterms</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Payment_Terms</fullName>
+        <field>Payment_Terms__c</field>
+        <literalValue>100% Advance with PO</literalValue>
+        <name>Update Payment Terms</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Payment_Terms1</fullName>
+        <field>Payment_Terms__c</field>
+        <literalValue>100% Advance with PO</literalValue>
+        <name>Update Payment Terms</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

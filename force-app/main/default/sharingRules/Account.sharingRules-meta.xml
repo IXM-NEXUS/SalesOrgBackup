@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Behram_s_Sharing_Model</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Behram&apos;s Sharing Model</label>
+        <sharedTo>
+            <role>Finance_Team</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Director_Of_Sales_Asia</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

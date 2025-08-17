@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Assign Lead to Salesperson</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>jfiatt@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Anguilla,Antigua and Barbuda,Argentina,Aruba,Bahamas,Barbados,Belize,Bolivia,Bonaire,Brazil,Cayman Islands,Chila,Colombia,Costa Rica,Cuba,Curaçao,Dominica,Dominican Republic,Ecuador,El Salvador,French Guiana,Grenada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Guadeloupe,Guatemala,Guyana,Haiti,Honduras,Jamaica,Martinique,Mexico,Montserrat,Nicaragua,Panama,Paraguay,Peru,Saint Barthélemy</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saint Kitts and Nevis,Saint Lucia,Saint Martin,Saint Pierre and Miquelon,Saint Vincent and the Grenadines,Sint Maarten</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Suriname,Trinidad and Tobago,Turks and Caicos Islands,Uruguay,Venezuela,Virgin Islands</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nrowlands@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Aland Islands,Albania,Andorra,Australia,Austria,Belarus,Belgium,Bermuda,Bosnia,Bouvet,Bulgaria,Cook Islands,Croatia,Czech Republic,Denmark,Egypt,Estonia,Falkland,Faroe,Fiji,Finland,France,French Polynesia,Iceland</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Germany,Gibralter,Greece,Guernsey,Heard Island,Holy See,Hugary,Ireland,Isle of Man,Italy,Jersey,Kirbati,Latvia Liechtenstein</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Lithuania,Luxembourg,Macedonia,Malta,Moldova,Monaco,Montenegro,Nauru,Netherlands</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>New Caledonia,New Zealand,Niue,Norfolk Island,Norway,Papua,Pitcairn,Poland,Portugal,Romania,Saint Helena,Samoa,San Marino,Serbia,Slovakia,Slovenia,Solomon Islands,South Georgia,Spain,Svalbard,Sweden,Switzerland,Tokelau,United Kingdom,Vanuatu</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country__c</field>
+                <operation>contains</operation>
+                <value>Wallis and Futuna</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ssantos@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Afghanistan,Armenia,Azerbaijan,Bahrain,Cyprus,Georgia,Iran,Iraq,Israel,Jordan,Kuwait,Lebanon,Oman,Palestinian,Qatar,Syrian,Turkey,Turkmenistan,United Arab Emirates,Yemen</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Saudi Arabia,Pakistan</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>bcooper@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Bangladesh,Bhutan,British Indian Ocean Territory,Brunei,Cambodia,China,Chinese,Christmas,Cocos,Indonesia,Japan,Kazakhstan,Korea,Kyrgyzstan,Lao,Macao,Malaysia,Maldives,Mongolia,Myanmar,Nepal,Philippines,Russian,Singapore,Sri Lanka,Tajikistan,Thailand</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Timor,Uzbekistan,Viet Nam</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>French Southern Territories</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ssantos@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Algeria,Angola,Benin,Botswana,Burkina Faso,Burundi,Cameroon,Cape Verde,Central African,Chad,Comoros,Congo,Cote,Djibouti,Equatorial,Eritrea,Ethiopia,Gabon,Gambia,Ghana,Guinea</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>Kenya,Lesotho,Liberia,Libyan,Madagascar,Malawi,Mali,Mauritania,Mauritius,Mayotte,Morocco,Mozambiqu,Nambia,Niger,Nigeria,Reunion,Rwanda,Sao Tome,Senegal,Seychelles,Sierra Leone,Somalia</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>contains</operation>
+                <value>South Sudan,Sudan,Swaziland,Tanzania,Togo,Tunisia,Uganda,Western Sahara,Zambia,Zimbabwe</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>cthompson@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>Canada,United States</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>agupta@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>India</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>dvellalath@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>South Africa</value>
+            </criteriaItems>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Basic Lead Assignment</fullName>
+        <active>false</active>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Import</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>bcooper@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>Country  = &quot;India&quot;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ssantos@invixium.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>NOT(Country = &quot;United States&quot; || Country = &quot;Canada&quot; ||Country = &quot;India&quot;)</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

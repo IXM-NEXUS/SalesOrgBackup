@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Lead Creation Email</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.CreatedDate</field>
+                <operation>equals</operation>
+                <value>TODAY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Leads_Source__c</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+            <senderEmail>smehta@invixium.com</senderEmail>
+            <senderName>Test</senderName>
+            <template>unfiled$public/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>Website Call back Auto Email - Sales</fullName>
+        <active>false</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>Website Call back Auto Email - Tech Supp</fullName>
+        <active>false</active>
+    </autoResponseRule>
+</AutoResponseRules>
